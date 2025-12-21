@@ -1,0 +1,82 @@
+/* Temel Reset ve Navbar Kutusu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: #0a0a0a;
+    /* Logonun uyumlu durması için çok koyu gri/siyah */
+    position: fixed;
+    /* Sayfa kaydırılsa da üstte kalsın */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo Ayarları */
+.navbar-logo img {
+    height: 50px;
+    /* Logo boyutunu buradan ayarlayabilirsin */
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+    /* Hafif bir parlama efekti */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Linkleri Merkeze Alma */
+.navbar-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2.5rem;
+    /* Linkler arası boşluk */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Link Stilleri */
+.navbar-links li a {
+    text-decoration: none;
+    color: #b0b0b0;
+    /* Pasifken hafif gri */
+    font-family: 'Arial', sans-serif;
+    /* Daha sonra font değiştirebiliriz */
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover Efektleri */
+.navbar-links li a:hover {
+    color: #ffffff;
+}
+
+/* Alt Çizgi Animasyonu */
+.navbar-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #ffffff;
+    /* Çizgi rengi */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.navbar-links li a:hover::after {
+    width: 100%;
+}

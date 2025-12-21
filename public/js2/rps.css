@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: verdana,sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 40px 0 ;
+    color: hsl(200, 100%, 60%);
+}
+
+button {
+    font-size: 7rem;
+    border: none;
+    border-radius: 250px;
+    margin-bottom: 40px;
+    background-color: hsl(208, 100%, 70%);
+    transition: background-color 0.5s ease;
+}
+button:hover{
+    background-color: hsl(208, 100%, 50%);
+}
+
+#playerDisplay , #computerDisplay {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#resultDisplay{
+    font-size: 5rem;
+    margin-top: 25px;
+    font-weight: bold;
+
+}
+
+.greenText ,#playerScoreDisplay{
+    color: hsl(120, 95%, 60%);
+}
+.redText , #computerScoreDisplay{
+    color: hsl(0, 100%, 60%);
+}
+
+.scoreDisplay{
+    margin-top:  25px ;
+    font-size: 2rem;
+}
+

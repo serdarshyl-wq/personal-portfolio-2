@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Sayi1: <input type="number" id="sayi1"> <br>
+    Sayi2: <input type="number" id="sayi2"> <br>
+    Toplam: <span id="sonuc"></span>
+    <input type="button" value="Topla" onclick="topla()">
+    <script>
+        function topla() {
+            var sayi1,sayi2,toplam;
+            sayi1= Number(document.getElementById("sayi1").value);
+            sayi2= Number(document.getElementById("sayi2").value);
+            toplam= sayi1 + sayi2;
+            document.getElementById("sonuc").innerHTML= toplam;
+        }
+        
+    </script>
+    
+</body>
+</html>

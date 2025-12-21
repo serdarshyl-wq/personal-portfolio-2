@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Sayı <input type="text" id="sayi"><br>
+    Kare: <span id="kareSonuc"></span>
+    <input type="button" value="Karesini Hesapla" onclick="karesi()">
+    <script>
+        function karesi()
+        {
+            //formdan sayi değerini al
+            var sayi= Number(document.getElementById("sayi").value);
+            //metin kutusu boş ise
+            if (sayi=="")
+            {
+                alert("Lütfen bir sayı giriniz!");
+                
+            }
+            //girilen sayi sıfır veya negatif ise
+            else
+            {
+                
+                if(sayi<=0)
+                {
+                    alert("Lütfen pozitif bir sayı giriniz!");
+                }
+                //girilen sayı doğru ise
+                else
+                {
+                    var kare= sayi * sayi;
+                    document.getElementById("kareSonuc").innerHTML= kare;
+                }
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

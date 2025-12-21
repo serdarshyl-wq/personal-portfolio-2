@@ -1,0 +1,122 @@
+/* CONTACT SECTION */
+
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cascading-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    cursor: default;
+}
+
+.line {
+    display: block;
+    background: linear-gradient(135deg, #fff 0%, #999 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    will-change: transform, opacity;
+}
+
+.line-1 {
+    font-size: 9rem;
+}
+
+.line-2 {
+    font-size: 7rem;
+}
+
+.line-3 {
+    font-size: 5rem;
+    color: #888;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.email-link {
+    font-size: 3rem;
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.email-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.icon-link {
+    color: #555;
+    font-size: 3rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    color: #E1306C;
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 5px 15px rgba(225, 48, 108, 0.3));
+}
+
+.linkedin:hover {
+    color: #0077b5;
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 5px 15px rgba(0, 119, 181, 0.3));
+}
+
+.github:hover {
+    color: #ffffff;
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3));
+}
+
+@media (max-width: 768px) {
+    .line-1 {
+        font-size: 4rem;
+    }
+
+    .line-2 {
+        font-size: 3rem;
+    }
+
+    .line-3 {
+        font-size: 2rem;
+    }
+
+    .icon-link {
+        font-size: 1.8rem;
+    }
+}

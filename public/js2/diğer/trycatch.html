@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h2> Try Catch denemesi</h2>
+    <p>lütfen 1 ile 5 arasında bir değer girin</p>
+    Ders Notu:  <input type="text" id="dersnotu">
+    <button type="button" onclick="kontrol()">giriş testi</button>
+    <p id="ileti"></p>
+    <p id="girilendeğer"></p>
+    <script>
+        function kontrol()
+        {
+          var ileti,hatailetisi;
+          //öncelikle hata iletisi alanını boşalt
+          hatailetisi= document.getElementById("ileti");
+          hatailetisi.innerHTML="";
+          //ders notunu alalım
+          dersnotu=document.getElementById("dersnotu").value;
+          try
+          {
+            if(dersnotu=="") throw "boş bir değer girdiniz!";
+            if(isNaN(dersnotu)) throw" sayısal bir değer girmek zorundasınız";
+            dersnotu=Number(dersnotu);
+            if(dersnotu<1 || dersnotu>5) throw "1 ile 5 arasında bir değer girmelisiniz!";
+            if(dersnotu>5) throw"5 ten büyük değer giremezsiniz!";
+          }
+          //hata varsa yakala
+          catch(err){
+            hatailetisi.innerHTML="hata: "+err;
+          }
+          // her durumda çalışacak blok
+          finally{
+            document.getElementById("girilendeğer").innerHTML="girilen değer: " + dersnotu;
+          }
+
+
+        }
+    </script>
+    
+</body>
+</html>
