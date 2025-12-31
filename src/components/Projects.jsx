@@ -9,18 +9,6 @@ const projectsData = [
     { id: 4, title: 'Project Four' },
     { id: 5, title: 'Project Five' },
     { id: 6, title: 'Project Six' },
-    { id: 7, title: 'Project Seven' },
-    { id: 8, title: 'Project Eight' },
-    { id: 9, title: 'Project Nine' },
-    { id: 10, title: 'Project Ten' },
-    { id: 11, title: 'Project Eleven' },
-    { id: 12, title: 'Project Twelve' },
-    { id: 13, title: 'Project Thirteen' },
-    { id: 14, title: 'Project Fourteen' },
-    { id: 15, title: 'Project Fifteen' },
-    { id: 16, title: 'Project Sixteen' },
-    { id: 17, title: 'Project Seventeen' },
-    { id: 18, title: 'Project Eighteen' },
 ];
 
 const Projects = () => {
